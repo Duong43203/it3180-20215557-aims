@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-05
+### Fixed
+- Sửa lỗi tìm kiếm tiêu đề phân biệt hoa thường (#20).
+
 ## [1.0.0] - 2026-11-05
 ### Added
 - Cart.print_cart() hiển thị giỏ hàng chi tiết.
