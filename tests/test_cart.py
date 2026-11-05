@@ -30,5 +30,23 @@ class TestCart(unittest.TestCase):
         with self.assertRaises(ValueError):
             cart.total_cost_with_discount(150)
 
+    def test_sort_by_title(self):
+        cart = Cart()
+        d1 = DigitalVideoDisc("Star Wars", cost=20)
+        d2 = DigitalVideoDisc("Aladin", cost=15)
+        cart.add_digital_video_disc(d1)
+        cart.add_digital_video_disc(d2)
+        cart.sort_by_title()
+        self.assertEqual(cart.items[0].title, "Aladin")
+
+    def test_sort_by_cost(self):
+        cart = Cart()
+        d1 = DigitalVideoDisc("DVD Cheap", cost=10)
+        d2 = DigitalVideoDisc("DVD Expensive", cost=50)
+        cart.add_digital_video_disc(d1)
+        cart.add_digital_video_disc(d2)
+        cart.sort_by_cost()
+        self.assertEqual(cart.items[0].cost, 50)
+
 if __name__ == "__main__":
     unittest.main()
