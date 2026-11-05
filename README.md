@@ -9,3 +9,8 @@ Trường Công nghệ Thông tin và Truyền thông – ĐHBK Hà Nội.
 
 ## Yêu cầu môi trường
 - Python >= 3.10
+
+## Hướng dẫn chạy
+```bash
+python main.py
+```
