@@ -32,3 +32,7 @@ class Cart:
             print(f"{i}. DVD - {item.title} - {item.category} - {item.director} - {item.length}: {item.cost} $")
         print(f"Total cost: {self.total_cost():.2f} $")
         print("***************************************************")
+
+    def total_cost_with_discount(self, percent: float) -> float:
+        # Công thức lỗi ban đầu: tính số tiền giảm chứ không phải tiền còn lại
+        return self.total_cost() * percent / 100
