@@ -1,4 +1,4 @@
-from dvd import DigitalVideoDisc
+from aims.dvd import DigitalVideoDisc
 
 class Cart:
     MAX_NUMBERS_ORDERED = 20
@@ -7,7 +7,6 @@ class Cart:
         self.items = []
 
     def add_digital_video_disc(self, disc: DigitalVideoDisc) -> bool:
-        # Lỗi cố ý off-by-one: > thay vì >= (sẽ sửa ở Lab 03)
         if len(self.items) > self.MAX_NUMBERS_ORDERED:
             return False
         self.items.append(disc)
