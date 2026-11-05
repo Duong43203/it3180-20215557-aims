@@ -10,7 +10,7 @@ class Cart:
         if len(self.items) >= self.MAX_NUMBERS_ORDERED:
             return False
         self.items.append(disc)
-        print(f"The disc '{disc.title}' has been added")
+        print(f"Đã thêm đĩa '{disc.title}' vào giỏ hàng")
         return True
 
     def remove_digital_video_disc(self, disc: DigitalVideoDisc) -> bool:
